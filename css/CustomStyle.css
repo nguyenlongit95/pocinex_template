@@ -168,18 +168,26 @@
   background: #e66e06!important
 }
 #leftNav {
-  width: 100% !important;
+  margin-right: 10%;
 }
 .menu-content {
   display: flex;
 }
 .right-nav {
-  display: flex;
+  display: inline-flex;
+  width: calc(90% - 162px);
 }
 .menu-item {
   text-decoration: none;
   margin-right: 15px;
   width: 210px;
+}
+.menu-right-left {
+  display: flex;
+}
+.menu-right-right {
+  display: flex;
+  margin-left: auto;
 }
 /**
 |
@@ -221,9 +229,6 @@
     margin-bottom: 10px;
 
   }
-  .right-nav {
-    flex-wrap: wrap;
-  }
   .menu-item span {
     font-size: 10px !important;
   }
@@ -254,9 +259,6 @@
     margin-bottom: 10px;
 
   }
-  .right-nav {
-    flex-wrap: wrap;
-  }
   .swiper-container-trading {
     display: flex;
   }
@@ -281,7 +283,7 @@
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1349px) {
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
   .menu-content {
     flex-wrap: wrap;
   }
@@ -291,7 +293,7 @@
 
   }
   .right-nav {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .swiper-container-trading {
     display: flex;
@@ -304,5 +306,9 @@
   }
   #select-coin-modal {
     margin-bottom: 15px;
+  }
+  .menu-right-right {
+    display: flex;
+    margin-left: 0;
   }
 }
